@@ -19,6 +19,7 @@ cp2 = Computadora('HP-Junior', monitor2,teclado2,raton2)
 
 
 
+
 teclado2 = Teclado("ACER","Bl")
 raton2 = Raton("HP","USB")
 monitor2 = Monitor("HP",15)

@@ -9,6 +9,9 @@ class Orden:
     def agregar_computadora(self, computadora):
         self._computadoras.append(computadora)
 
+    @property
+    def id_orden(self):
+        return  self._id_orden
     def __str__(self):
         computadoras_str =''
         for computadora in self._computadoras:
@@ -18,3 +21,14 @@ class Orden:
             Orden: {self._id_orden}
             Computadoras: {computadoras_str}
         '''
+
+    def imprimir_orden(self):
+        try:
+            archivo = open(f'orden.txt','w')
+            archivo.write(self)
+            print('Imprimiendo Orden')
+        except Exception as e:
+            print(e)
+        finally:
+            archivo.close()
+

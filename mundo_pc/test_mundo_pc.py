@@ -29,3 +29,5 @@ print(orden)
 computadoras2 = [cp2,cp3]
 orden2 = Orden(computadoras2)
 print(orden2)
+
+Orden.imprimir_orden(str(orden))
